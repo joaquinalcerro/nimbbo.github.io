@@ -1,15 +1,247 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <!-- CSS only -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/12f6728db2.js" crossorigin="anonymous"></script>
+    <title>nimbbo</title>
   </head>
-  <body>
-    <h3>Hello this is nimbbo... starting page!!</h3>
-    <!-- JavaScript Bundle with Popper -->
+  <body class="container">
+    <!-- Navigation Bar -->
+    <nav class="navbar bg-light navbar-light navbar-expand-lg">
+      <div class="conatainer">
+        <a href="index.html" class="navbar-brand"><img src="img/logo_nimbbo_oficial vPortal.png" alt="NIMBBO" title="nimbbo"></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Experiencia</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Navigation Bar -->
+    
+    <!-- Carousel -->
+    <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselMain" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselMain" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="6500">
+          <img src="img/you-x-ventures-vbxyFxlgpjM-unsplash.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-8 bg-custom-carousel d-none d-lg-block py-3 px-0">
+                  <h1>Soluciones a la medida</h1>
+                  <div class="border-top border-primary w-50 mx-auto my-3"></div>
+                  <h3>Análisis y diseño de soluciones tecnologicas.</h3>
+                  <a href="#" class="btn btn-primary btn-md">Conoce mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="6500">
+          <img src="img/work-731198_1280.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-8 bg-custom-carousel d-none d-lg-block py-3 px-0">
+                  <h1>Desarrollo de Aplicaciones</h1>
+                  <div class="border-top border-primary w-50 mx-auto my-3"></div>
+                  <h3>Desarrollamos aplicaciones Web.</h3>
+                  <a href="#" class="btn btn-primary btn-md">Conoce mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="6500">
+          <img src="img/cloud-4373407_1280.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-8 bg-custom-carousel d-none d-lg-block py-3 px-0">
+                  <h1>Soluciones en la Nube</h1>
+                  <div class="border-top border-primary w-50 mx-auto my-3"></div>
+                  <h3>Te apoyamos en el uso y migración a la nube.</h3>
+                  <a href="#" class="btn btn-primary btn-md">Conoce mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselMain" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselMain" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+    <!-- End Carousel -->
+
+    <!-- Text heading -->
+
+    <div class="col-12 text-center mt-3">
+      <h1 class="text-dark pt-4">Integradores de soluciones tecnologicas</h1>
+      <div class="border-top border-primary w-25 mx-auto my-3"></div>
+      <p>Apoyando empresas adoptar soluciones en la nube</p>
+    </div>
+
+    <!-- EndText heading -->
+
+    <!-- 3 Column Section -->
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-4 my-4">
+          <img src="img/hand-3108175_1280.jpg" alt="" class="img-3-col w-100">
+          <h4 class="my-4">Soluciones a la medida</h4>
+          <p>
+            Nos enfocamos en resolver problemas de negocio de nuestros clientes con
+            tecnología y diseñamos las soluciones a la media de nuestros clientes.
+            Integramos diversas tecnologias para entregar una solución llave en mano.
+          </p>
+          <a href="#" class="btn btn-outline-dark btn-md">Conoce mas</a>
+        </div>
+
+        <div class="col-md-4 my-4">
+          <img src="img/code-1839406_1280.jpg" alt="" class="img-3-col w-100">
+          <h4 class="my-4">Desarrollo de aplicaciones</h4>
+          <p>
+            Con el objetivo de optimizar y mejorar los procesos y procedimientos de
+            nuestros clientes, desarrollamos aplicaciones a la medidad.
+            Entregamos las soluciones bajo el modelo de servicio y nuestros clientes
+            no se preocupan del soporte y mantenimimento.
+          </p>
+          <a href="#" class="btn btn-outline-dark btn-md">Conoce mas</a>
+        </div>
+        
+        <div class="col-md-4 my-4">
+          <img src="img/network-4348639_1280.png" alt="" class="img-3-col w-100">
+          <h4 class="my-4">Soluciones en la nube</h4>
+          <p>
+            Apoyamos a nuestros clientes en el análisis y diseño de su estrategia de
+            adopción del modelo "Cloud services". El modelo de Cloud services tiene muchas
+            ventajas para nuestros clientes y nosotros podemos ayudarle a sacar el máximo
+            beneficio del mismo.
+          </p>
+          <a href="#" class="btn btn-outline-dark btn-md">Conoce mas</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- End 3 Column Section -->
+
+    <!-- The matrix -->
+
+    <div class="fixed-background">
+
+      <div class="row text-light py-5">
+        <div class="col-12 text-center">
+          <h1>Transformemos digitalmente tu empresa!!</h1>
+          <h3 class="py-4">... la transformación digital te permitirá competir en este nuevo mundo digital</h3>
+        </div>
+      </div>
+
+      <div class="fixed-wrap">
+        <div class="fixed"></div>
+      </div>
+    </div>
+
+    <!-- End The matrix -->
+
+    <!-- Two columns -->
+
+    <div class="container my-5">
+      <div class="row py-3">
+        <div class="col-lg-4 mb-4 my-lg-auto">
+          <h1 class="text-dark font-weight-bold mb-3">Nuestra experiencia</h1>
+          <p class="mb-4">
+            Hemos participado de una gran cantidad de proyectos de variada complejidad
+            que nos ha permitido ganar una amplia experiencia la cual nos permite
+            apoyar a nuestros cliente con mayor confianza y probabilidad de exito.
+          </p>
+          <a href="#" class="btn btn-outline-dark btn-md">Conoce mas</a>
+        </div>
+
+        <div class="col-lg-8">
+          <img src="img/technology-298256_1280.jpg" alt="" class="w-100">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- End Two columns -->
+
+    <!-- Contactanos jumbotron -->
+
+    <div class="bg-light text-dark py-5 mb-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-lg-8 col-xl-9 my-auto">
+            <h4>Estas en busqueda de una empresa con experiencia en soluciones tecnologicas?</h4>
+          </div>
+          <div class="col-md-5 col-lg-4 col-xl-3 pt-4 pt-md-0">
+            <a href="#" class="btn btn-primary btn-lg">Contactanos ahora</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Contactanos jumbotron -->
+
+    <!-- footer -->
+
+    <footer>
+      <div class="container">
+        <div class="row text-light text-center py-4 justify-content-center">
+          <div class="col-sm-10 col-md-8 col-lg-6">
+            <img src="img/logo_nimbbo_oficial vPortal.png" alt="">
+            <ul class="social pt-3">
+              <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End footer -->
+
+    <!-- Socket -->
+
+    <div class="socket text-light text-center py-3">
+      <p>&copy; <a href="http://www.nimbbo.com" target="_blank">nimbbo.com</a></p>
+    </div>
+
+    <!-- End Socket -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   </body>
 </html>
