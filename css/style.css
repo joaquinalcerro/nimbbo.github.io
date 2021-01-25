@@ -93,6 +93,9 @@
   max-height: 170px;
 }
 
+.img-3-col-details {
+  max-height: 190px;
+}
 
 .fixed {
   background-image: url('../img/matrix-2953869_1280.jpg');
@@ -143,12 +146,31 @@ footer .svg-inline--fa:hover {
   color: #029ed9;
 }
 
+.service-icon {
+  font-size: 4rem;
+}
+
 
 .socket {
   background-color: #222222;
   border-top: .1rem solid #029ed9;
 }
 
+.detail-column-title {
+  font-weight: 600;
+}
+
+.detail-column-text {
+  font-size: 1.5rem;
+}
+
+p .ul, li {
+  font-size: 1.5rem;
+}
+
+.two-col-text {
+  font-size: 1.5rem;
+}
 
 /* Fixed Background Image */
 
